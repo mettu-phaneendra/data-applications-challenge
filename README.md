@@ -10,7 +10,7 @@ Build an interface that exposes this data in whatever form you like.
 - Don't spend too much time on this, focusing on one feature is a plus
 - Deliver a product that is easy for us to consume
 - Commit history showing your thought/development process is always interesting
-- DO NOT fork this repository. Create a new repo then email it to us once its complete
+- DO NOT fork this repository. Create a new personal repository then email it to us once its complete
 
 If you have any questions do not hesitate to reach out via email or phone. In consideration of your schedule, take as long as you need to return the challenge.
 
