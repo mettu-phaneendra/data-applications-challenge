@@ -11,20 +11,26 @@ def get_volta_data(url):
     print "No. of sites :", d_metrics['size']
 
     # build the site metrics data from resulted json
-    _count = 1
+    _count = 0
     for site in site_metrics:
         _name = ''
         _latitude = 0
         _longitude = 0
+        _count = _count + 1
         if 'name' in site and not (site['name'] is None):
             _name = site['name']
             print ("Site # {}, name {}:".format(_count, _name))
-            _count = _count + 1;
         if 'location' in site and not (site['location'] is None):
             _latitude = site['location']['coordinates'][0]
             _longitude = site['location']['coordinates'][1]
             print ("Location :({}, {})".format(_latitude, _longitude))
-
+        if 'chargers' in site and not (site['chargers'] is None):
+            _total_chargers = (site['chargers'][0]['total'])
+            _available_chargers = (site['chargers'][0]['available'])
+            print ("Total chargers :{}; Available chargers :{}".format(_total_chargers, _available_chargers))
+        else:
+            print ("Total chargers :{}; Available chargers :{}".format(0, 0))
+            
 def main():
     site_metrics_url = 'https://api.voltaapi.com/v1/sites-metrics'
     get_volta_data(site_metrics_url);
