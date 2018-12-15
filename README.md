@@ -35,3 +35,26 @@ Advantage: the plots are posted online, so no dependency to have a massive basem
 Disadvantage: the data is plotted online and public, since some of these api are public information that should not be a problem.
 I will try use only those api which doesnt need a auth credentials. 
 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Final steps followed to plot this site metrics data:
+
+OS: ubuntu 18.04
+Python 2.7.12
+
+setup:
+sudo apt install python
+sudo apt install python-pip
+
+pip install requests
+pip install plotly
+
+plotly account:
+user-name : pmettu
+key : 19dQNYZz6M9Co4KsVDtk
+
+These above steps needs to be done using a setup py file.
+will try to do this, as I have run out of time of 2 hours. 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
