@@ -26,8 +26,8 @@ def get_volta_data(url):
             print ("Site # {}, Name :{}".format(_count, _name))
 
         if 'location' in site and not (site['location'] is None):
-            _latitude = site['location']['coordinates'][0]
-            _longitude = site['location']['coordinates'][1]
+            _latitude = site['location']['coordinates'][1]
+            _longitude = site['location']['coordinates'][0]
             print ("Location :({}, {})".format(_latitude, _longitude))
 
         if 'chargers' in site and not (site['chargers'] is None):
