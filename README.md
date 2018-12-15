@@ -53,6 +53,14 @@ plotly account:
 user-name : pmettu
 key : 19dQNYZz6M9Co4KsVDtk
 
+How to run:
+python site_data_viz.py
+
+This will automatically launch the browser window with the US map and sites.
+Please hover over the sites to get the stations, chargers and media plaer problem status
+or incase of this whole thing doesnt work bcoz of the env issues please visit:
+https://plot.ly/~pmettu/2/charging-station-metrics/
+
 These above steps needs to be done using a setup py file.
 will try to add setup file, as I have run out of time. 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
