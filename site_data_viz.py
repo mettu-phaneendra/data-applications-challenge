@@ -44,8 +44,8 @@ class SiteMap(object):
             if 'chargers' in site and not (site['chargers'] is None):
                 _total_chargers = (site['chargers'][0]['total'])
                 _available_chargers = (site['chargers'][0]['available'])
-                _text = _text + ('<br>Total :', _total_chargers)
-                _text = _text + ('<br>Available :', _available_chargers)
+                _text = _text + ('<br>Total Chargers :', _total_chargers)
+                _text = _text + ('<br>Available Chargers :', _available_chargers)
                 print ("Total chargers :{}; Available chargers :{}".format(_total_chargers, _available_chargers))
             else:
                 _text = _text + ('Total :', 0)
