@@ -54,7 +54,7 @@ user-name : pmettu
 key : 19dQNYZz6M9Co4KsVDtk
 
 These above steps needs to be done using a setup py file.
-will try to do this, as I have run out of time of 2 hours. 
+will try to add setup file, as I have run out of time. 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
