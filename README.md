@@ -24,3 +24,9 @@ We don't spend much time reinventing wheels here at Volta. Depending on the mean
 
 Conversely, if you already have a tool or library in mind: show off your skills by using something you know when to provide new insight into our data. Engineering hours are expensive so we like to find a middle-ground between correctness and efficiency.
 
+## Technologies or tools used
+
+Python makes perfect sense to quickly plot or map locations on the map.
+I am planning on using Matplotlib BaseMap to plot the station metrics on the map.
+Keeping the 2 hrs time in mind, I'll keep the documentation to minimal and use intuitive naming 
+
