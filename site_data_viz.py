@@ -19,7 +19,8 @@ def get_volta_data(url):
         _count = _count + 1
         if 'name' in site and not (site['name'] is None):
             _name = site['name']
-            print ("Site # {}, name {}:".format(_count, _name))
+            print
+            print ("Site # {}, Name :{}".format(_count, _name))
 
         if 'location' in site and not (site['location'] is None):
             _latitude = site['location']['coordinates'][0]
@@ -33,10 +34,11 @@ def get_volta_data(url):
         else:
             print ("Total chargers :{}; Available chargers :{}".format(0, 0))
 
-        for count in range(len(site['stations'])):
-            _station = site['stations'][count]['name']
-            _media = str(site['stations'][count]['has_media_issue'])
-            print ("\tStation :{}; has media issues :{}".format(_station, _media))
+        if 'stations' in site and not (site['stations'] is None):
+            for count in range(len(site['stations'])):
+                _station = site['stations'][count]['name']
+                _media = str(site['stations'][count]['has_media_issue'])
+                print ("\tStation :{}; has media issues :{}".format(_station, _media))
 
 def main():
     site_metrics_url = 'https://api.voltaapi.com/v1/sites-metrics'
