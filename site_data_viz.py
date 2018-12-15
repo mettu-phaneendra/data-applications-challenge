@@ -44,8 +44,8 @@ class SiteMap(object):
             if 'chargers' in site and not (site['chargers'] is None):
                 _total_chargers = (site['chargers'][0]['total'])
                 _available_chargers = (site['chargers'][0]['available'])
-                _text = _text + ('Total :', _total_chargers)
-                _text = _text + ('Available :', _available_chargers)
+                _text = _text + ('<br>Total :', _total_chargers)
+                _text = _text + ('<br>Available :', _available_chargers)
                 print ("Total chargers :{}; Available chargers :{}".format(_total_chargers, _available_chargers))
             else:
                 _text = _text + ('Total :', 0)
@@ -56,7 +56,7 @@ class SiteMap(object):
                 for count in range(len(site['stations'])):
                     _station = site['stations'][count]['name']
                     _media = str(site['stations'][count]['has_media_issue'])
-                    _text = _text + ('Station :', _station)
+                    _text = _text + ('<br>Station :', _station)
                     _text = _text + ('; Media issues :', _media)
                     print ("\tStation :{}; has media issues :{}".format(_station, _media))
                 self.site_status['text'].append(_text)
