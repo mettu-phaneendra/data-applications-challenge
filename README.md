@@ -30,3 +30,8 @@ Python makes perfect sense to quickly plot or map locations on the map.
 I am planning on using Matplotlib BaseMap to plot the station metrics on the map.
 Keeping the 2 hrs time in mind, I'll keep the documentation to minimal and use intuitive naming 
 
+After a little bit of reviews online, it makes sense to use this new py map module called plotly
+Advantage: the plots are posted online, so no dependency to have a massive basemap module installed
+Disadvantage: the data is plotted online and public, since some of these api are public information that should not be a problem.
+I will try use only those api which doesnt need a auth credentials. 
+
